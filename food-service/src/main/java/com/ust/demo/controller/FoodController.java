@@ -40,6 +40,7 @@ public class FoodController {
 	
 	@GetMapping
 	public ResponseEntity<List<Food>> retrieveAllFoods() {
+		System.out.println("This is a change done");
 		return new ResponseEntity<>(fs.read(), HttpStatus.OK);
 	}
 	
